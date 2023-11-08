@@ -1,25 +1,26 @@
 <!DOCTYPE html>
 <html lang="">
   <head>
-    <meta charset="utf-8">
+    <meta charset="utf-8" />
     <title>Chatwoot</title>
     <script>
-      (function(d,t) {
-        var BASE_URL="https://serverstatsback.gox.ai";
-        var g=d.createElement(t),s=d.getElementsByTagName(t)[0];
-        g.src=BASE_URL+"/packs/js/sdk.js";
+      window.chatwootSettings = { darkMode: "auto" };
+      (function (d, t) {
+        var BASE_URL = "https://serverstatsback.gox.ai";
+        var g = d.createElement(t),
+          s = d.getElementsByTagName(t)[0];
+        g.src = BASE_URL + "/packs/js/sdk.js";
         g.defer = true;
         g.async = true;
-        s.parentNode.insertBefore(g,s);
-        g.onload=function(){
+        s.parentNode.insertBefore(g, s);
+        g.onload = function () {
           window.chatwootSDK.run({
-            websiteToken: '5W8p414bYzk4ezV1WyBxGKCY',
-            baseUrl: BASE_URL
-          })
-        }
-      })(document,"script");
+            websiteToken: "5W8p414bYzk4ezV1WyBxGKCY",
+            baseUrl: BASE_URL,
+          });
+        };
+      })(document, "script");
     </script>
-    
   </head>
   <body>
     <header></header>
